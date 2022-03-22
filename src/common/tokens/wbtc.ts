@@ -17,6 +17,15 @@ export class WBTC {
     };
   }
 
+  public static MATIC(): Token {
+    return {
+      chainId: ChainId.MATIC,
+      contractAddress: '0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6',
+      decimals: 8,
+      symbol: 'WBTC',
+      name: 'Wrapped BTC',
+    };
+  }
   /**
    * Get WBTC token info by chain id
    * @param chainId The chain id
@@ -25,6 +34,8 @@ export class WBTC {
     switch (chainId) {
       case ChainId.MAINNET:
         return this.MAINNET();
+      case ChainId.MATIC:
+        return this.MATIC();
       default:
         throw new UniswapError(
           `${chainId} is not allowed`,

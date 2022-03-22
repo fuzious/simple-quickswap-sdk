@@ -17,6 +17,16 @@ export class USDC {
     };
   }
 
+  public static MATIC(): Token {
+    return {
+      chainId: ChainId.MATIC,
+      contractAddress: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+      decimals: 18,
+      symbol: 'USDC',
+      name: 'USD Coin',
+    };
+  }
+
   /**
    * Get USDC token info by chain id
    * @param chainId The chain id
@@ -25,6 +35,8 @@ export class USDC {
     switch (chainId) {
       case ChainId.MAINNET:
         return this.MAINNET();
+      case ChainId.MATIC:
+        return this.MATIC();
       default:
         throw new UniswapError(
           `${chainId} is not allowed`,

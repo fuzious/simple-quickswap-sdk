@@ -107,6 +107,18 @@ export class ETH {
     };
   }
 
+  public static MATIC(): Token {
+    return {
+      chainId: ChainId.MATIC,
+      contractAddress: appendEthToContractAddress(
+        '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619'
+      ),
+      decimals: 18,
+      symbol: ETH_SYMBOL,
+      name: ETH_NAME,
+    };
+  }
+
   /**
    * Get ETH token info by chain id
    * @param chainId The chain id
@@ -134,6 +146,8 @@ export class ETH {
         return this.GORLI();
       case ChainId.KOVAN:
         return this.KOVAN();
+      case ChainId.MATIC:
+        return this.MATIC();
       default:
         throw new UniswapError(
           `${chainId} is not allowed`,

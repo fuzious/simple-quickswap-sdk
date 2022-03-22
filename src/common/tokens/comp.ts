@@ -17,6 +17,16 @@ export class COMP {
     };
   }
 
+  public static MATIC(): Token {
+    return {
+      chainId: ChainId.MATIC,
+      contractAddress: '0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c',
+      decimals: 18,
+      symbol: 'COMP',
+      name: 'Compound',
+    };
+  }
+
   /**
    * Get COMP token info by chain id
    * @param chainId The chain id
