@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uniswap-integration/simple-uniswap-sdk.git"
+    "url": "git+https://github.com/fuzious/simple-quickswap-sdk.git"
   },
   "author": "",
   "license": "ISC",
@@ -34,9 +34,9 @@
     "uniswap"
   ],
   "bugs": {
-    "url": "https://github.com/uniswap-integration/simple-uniswap-sdk/issues"
+    "url": "https://github.com/fuzious/simple-quickswap-sdk/issues"
   },
-  "homepage": "https://github.com/uniswap-integration/simple-uniswap-sdk#readme",
+  "homepage": "https://github.com/fuzious/simple-quickswap-sdk#readme",
   "dependencies": {
     "bignumber.js": "^9.0.1",
     "ethereum-multicall": "^2.7.0",
