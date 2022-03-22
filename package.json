@@ -1,6 +1,6 @@
 {
   "name": "simple-quickswap-sdk",
-  "version": "0.1.0-beta",
+  "version": "0.1.1-beta",
   "description": "Simple easy to understand SDK for Quickswap to find you the best swap quote",
   "main": "dist/cjs/index.js",
   "module": "./dist/esm/index.js",
